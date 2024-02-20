@@ -2,14 +2,14 @@ name: Test Project
 on: 
     push
 jobs:
-    first-job-run-shell-command:
+    run-shell-command:
         runs-on: ubuntu-latest
         steps:
           - name: Print confirmation
             run: |
                 echo "First output"
                 echo "Second output"
-    test:
+    run-test-cases:
         runs-on: ubuntu-latest
         steps:
           - name: get code from repository
