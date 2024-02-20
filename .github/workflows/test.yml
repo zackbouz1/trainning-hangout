@@ -1,0 +1,27 @@
+name: Test Project
+on: 
+    push
+jobs:
+    first-job-run-shell-command:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Print confirmation
+            run: |
+                echo "First output"
+                echo "Second output"
+    test:
+        runs-on: ubuntu-latest
+        steps:
+          - name: get code from repository
+          # https://github.com/marketplace/actions/checkout
+            uses: actions/checkout@v4
+          - name: Install NodeJS
+            uses: actions/setup-node@v3
+            with:
+                node-version: 18
+          - name: Install dependencies
+          ### install dependency versions that are locked into the package.json file, use: npm ci instead of npm install
+            run: npm ci
+          - name: run unit tests
+            run: npm test
+
