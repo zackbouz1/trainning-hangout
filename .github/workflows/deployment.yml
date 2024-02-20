@@ -38,7 +38,7 @@ jobs:
           ### install dependency versions that are locked into the package.json file, use: npm ci instead of npm install
             run: npm ci
           - name: Build project
-          ### build the code for the production environment. the npm run build command will target the "build": "vite build" script defined in the package.json file
+          ### build the code for the production environment. the npm run build command will target the "build": "vite build" script to build for production (https://vitejs.dev/guide/build) defined in the package.json file
             run: npm run build
           - name: Deploy
           ### normal the code in this step will upload the built to the webserver, but this is out of scope of this course. Just echo some text
