@@ -1,6 +1,6 @@
 name: Test Project
 on: 
-    push
+    [push, workflow_dispatch]
 jobs:
     run-shell-command:
         runs-on: ubuntu-latest
@@ -27,7 +27,7 @@ jobs:
     deploy-paackage:
       ## IMPORTANT: each job uses its own runner; its own VM that's totally isolated from other machines and jobs! Therefore, we need to define a new runner. 
       #### note: jobs run in parallel by default. to run sequentially, use the "need" keyword
-        needs: run-test-cases
+        needs: [run-test-cases]
         runs-on: ubuntu-latest
         steps:
           - name: get code
