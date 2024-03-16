@@ -2,4 +2,4 @@
      - [ ] git commit --verify
      - [ ] git notes show
      - [ ] git commit preview
-     - [ ] git commit --dry-run
+     - [x] git commit --dry-run
