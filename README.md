@@ -33,3 +33,25 @@
      - [ ] when the HEAD needs to be reset to a specific commit
      - [ ] when a specific commit needs to be pulled down from the remote repository
      - [ ] when a hook script needs to be invoked
+
+116. What would happen if you ran the git reset testfile.js command?
+     - [ ] testfile.js would be reverted to a blank file.
+     - [ ] testfile.js would be reset to its first saved state.
+     - [ ] testfile.js would be reverted to its last saved copy.
+     - [ ] testfile.js would be removed from the stage/index area, if present.
+
+## MANAGING MERGE
+118. When Git workflows contain a topic branch, what purpose does the topic branch serve?
+     - [ ] Topic branches store unstable code until it is peer reviewed for integration into another feature branch.
+     - [ ] Topic branches correspond to different stages of development and are always open for long-running branches to be pulled into.
+     - [ ] Topic branches are used in waterfall development methodologies to track the state of the code during the various stages of waterfall.
+     - [ ] Topic branches are short-lived branches used to store work related to a particular feature.
+
+119. What practice can help reduce the chances of encountering a merge conflict?
+
+- [ ] Provide detailed commit messages that describe the changes being introduced by the commit.
+- [ ] make large commits that introduce multiple features.
+- [x] Keep local repository branches in sync with upstream branches in the remote repository by committing,pushing and pulling frequently.
+- [ ] Avoid frequent interaction with the remote repository to reduce the probability of pulling conflicts.
+    
+
