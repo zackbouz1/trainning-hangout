@@ -1,4 +1,4 @@
-# Github Foundations Practive Questions
+# Github Foundations Practice Questions
 
 ## GitHub Projects
 z001. (very likely exam question) GitHub built-in Project Workflows allows you to automate what happens based on specific events. what are the Built-in Workflows? (list 8)
