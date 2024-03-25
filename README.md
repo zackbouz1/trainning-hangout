@@ -43,7 +43,7 @@ z005.In a free GitHub plan, what is the maximum number of people that can be ass
   - [ ] Under the GitHub's free plan, you can assign up to 100 assigneds to an issue or PR for a Public repo and up to 10 assignee for a private repo
   - [ ] There is no limit on the number of assignees in the GitHub's free plan
 
-z005. Who can assign Issues and PRs to other GitHubs users?
+z006. Who can assign Issues and PRs to other GitHubs users?
   - [ ] Only the repository owner can assign Issues and PRs
   - [x] Anyone with write access to a repository can assign issues and pull requests.
   - [ ] Only Contributors and Owners
