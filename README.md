@@ -1,4 +1,4 @@
-# Github Foundation Assessment
+# Github Foundations Practive Questions
 
 ## GitHub Projects
 z001. (very likely exam question) GitHub built-in Project Workflows allows you to automate what happens based on specific events. what are the Built-in Workflows? (list 8)
@@ -16,7 +16,7 @@ z001. (very likely exam question) GitHub built-in Project Workflows allows you t
       * filters: is:issue,pr is:open label:bug
       * Action: Add the item to the project
 
-z002. Which GitHub built-in Project Workflows are turned on by default when you crate a new project? (choose 2)
+z002. Which GitHub built-in Project Workflows are turned on by default when you create a new project? (choose 2)
   - [ ] Item added to project
   - [ ] Item reopened 
   - [x] Item closed
