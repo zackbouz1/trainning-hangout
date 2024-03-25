@@ -56,25 +56,28 @@ z102. Who can assign Issues and PRs to other GitHubs users?
   - [ ] Anyone with access to the repository can assign Issues and PRs
 
 ## GitHub Security Capabilities( DevSecOps)
+**Important Exam Notes:** 
+ - GitHub Advanced Security Features for users are available for public repositories for free.
+ - Organizations using GitHub Enterprise Cloud with a **license for GitHub Advanced Security** can also enable Advanced Security Features for users on their private and internal repositories.
+
 ### Supply Chain
  - *Dependency Graph:* view your dependencies
- - *Advisory database:* canoncial database of dependency vulnerabilities
- - *Security alerts and updates:* notifications for vulnerabilities in your dependencies, and pull requests to fix them
+   - *Advisory database:* canoncial database of dependency vulnerabilities
+   - *Security alerts and updates:* notifications for vulnerabilities in your dependencies, and pull requests to fix them
  - *OSS Vulnerability Scanning:*
-     - Dependabot
-     - Dependency review (Advanced security): identify new dependencies and vulnerabilities in PR
-     - Organization-Dependency-Insights
+     - Dependabot: Dependabot alerts are free to use for all repositories on GitHub.com. Advanced capabilities, like the ability to create **custom auto-triage rules** for Dependabot alerts, are available (for free) on public repositories only or Organizations with Advanced Sercurity license.
+
 
 ### Code
  - *Secret Scanning Alerts (Advanced security):* Find API tokens or other secrets exposed anywhere in your git history
      - Custom Regex
      - Private-Secret-Scanning
-     - Public-Secret-Scanning: Secret scanning alerts for partners runs automatically on public repositories and public npm packages to notify service providers about leaked secrets on GitHub.com.
-     - 
+     - Public-Secret-Scanning
  - *CodeQL Scanning (Advanced security):* Static analysis of every git push, integrated into the developer workflow.
 
 ### Development Lifecycle 
- - *Branch protection:* Enforce requirement for pushing to a branch and merging PRs
+ - *Branch protection rules:* Enforce requirement for pushing to a branch and merging PRs
+   - Advanced Security feature: Branch protection rule can require the code to pass a series of Status Checks before allowing the PR - e.g., Code should pass CodeQL analysis, Python code should be properly formatted.
  - *Commit signing:* Enforce requirement that all commits are signed
 
 ## GitHub Organization and Repository Roles
