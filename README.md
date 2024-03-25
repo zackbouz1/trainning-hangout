@@ -55,6 +55,12 @@ z007. Who can assign Issues and PRs to other GitHubs users?
   - [ ] Only Contributors and Owners
   - [ ] Anyone with access to the repository can assign Issues and PRs
 
+## GitHub Security
+z201. what are the available access permissions in GitHubs Personal Accounts? (Choose 2)
+  - [x] Repository Owner has full control of the repository and its configurations and can invite collaborators.
+  - [ ] Repository Reader can read contents but cannot do anything else (incorrect, there is no READER role in Presonal account)
+  - [x] Repository Collaborators can pull (read) the contents of the repository and push (write) changes to the repository
+  - [ ] Repository Maintainners can open/close/reopen issues and PRs (incorrect, there is no MAINTAINNER role in Personal Accounts)
 
 ## Git Commands
 107. After making some major changes to your code, you are a little nervous about committing. What command would you use to review the commit prior to making it?
