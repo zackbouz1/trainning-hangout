@@ -1,7 +1,7 @@
 # Github Foundations Practice Questions
 
 ## GitHub Projects
-z001. (very likely exam question) GitHub built-in Project Workflows allows you to automate what happens based on specific events. what are the Built-in Workflows? (list 8)
+p001. (very likely exam question) GitHub built-in Project Workflows allows you to automate what happens based on specific events. what are the Built-in Workflows? (list 8)
   - [ ] Item Labeled (don't fall for this)
   - [x] Item added to project
   - [x] Item reopened 
@@ -16,7 +16,7 @@ z001. (very likely exam question) GitHub built-in Project Workflows allows you t
       * filters: is:issue,pr is:open label:bug
       * Action: Add the item to the project
 
-z002. Which GitHub built-in Project Workflows are turned on by default when you create a new project? (choose 2)
+p002. Which GitHub built-in Project Workflows are turned on by default when you create a new project? (choose 2)
   - [ ] Item added to project
   - [ ] Item reopened 
   - [x] Item closed
@@ -24,39 +24,61 @@ z002. Which GitHub built-in Project Workflows are turned on by default when you 
   - [ ] Code review approved
   - [x] Pull request merged
 
-z003. Project Insights lets you create charts about GetHub Project. List the chart types available under Project Insight? (choose 2)
+p003. Project Insights lets you create charts about GetHub Project. List the chart types available under Project Insight? (choose 2)
   - [x] Current Charts: Track bugs opened and closed each iteration (X = Iteration#  , Y = number of items by status , Legend = Status)
   - [x] Historical Charts: track changes to the state of your project items over time (e.g., the X axis is always time)
   - [ ] User Chart
   - [ ] Team Chart
 
-z004. what is the maximum number of items that can be included and displayed in a GitHub Project
+p004. what is the maximum number of items that can be included and displayed in a GitHub Project
   - [ ] 100
   - [ ] 600
   - [x] 1200
   - [ ] 2000
 
-z005.Jerry is managing a very large project and he is worried the number of items in the GitHub Project will soon reach the 1200 items limit. What Should Jerry do?
+p005.Jerry is managing a very large project and he is worried the number of items in the GitHub Project will soon reach the 1200 items limit. What Should Jerry do?
   - [ ] Call GitHub premium support and request and request a quota increase
   - [x] Turn on the Project's Auto-archive items workflow to auto-archive completed items after 2 weeks
   - [ ] Switch to the paid plan
   - [ ] Delete the closed issues so they don't appear in the project
 
 ## GitHub Issues
-z006.In a free GitHub plan, what is the maximum number of people that can be assigned to an issue or PR in a public repository and in a private repository?
+z101.In a free GitHub plan, what is the maximum number of people that can be assigned to an issue or PR in a public repository and in a private repository?
   - [ ] Under the GitHub's free plan, you can assign limited number of assigneds to an issue or PR in a Public repo and up to 10 assignees in a private repo
   - [x] Issues and pull requests in public repositories, and in private repositories for a paid account, can have up to 10 people assigned. Private repositories on the free plan are limited to one person per issue or pull request.
   - [ ] Under the GitHub's free plan, you can assign up to 100 assigneds to an issue or PR for a Public repo and up to 10 assignee for a private repo
   - [ ] There is no limit on the number of assignees in the GitHub's free plan
 
-z007. Who can assign Issues and PRs to other GitHubs users?
+z102. Who can assign Issues and PRs to other GitHubs users?
   - [ ] Only the repository owner can assign Issues and PRs
   - [x] Anyone with write access to a repository can assign issues and pull requests.
   - [ ] Only Contributors and Owners
   - [ ] Anyone with access to the repository can assign Issues and PRs
 
-## GitHub Security
-z201. what are the available access permissions in GitHubs Personal Accounts? (Choose 2)
+## GitHub Security Capabilities( DevSecOps)
+### Supply Chain
+ - *Dependency Graph:* view your dependencies
+ - *Advisory database:* canoncial database of dependency vulnerabilities
+ - *Security alerts and updates:* notifications for vulnerabilities in your dependencies, and pull requests to fix them
+ - *OSS Vulnerability Scanning:*
+     - Dependabot
+     - Dependency review (Advanced security): identify new dependencies and vulnerabilities in PR
+     - Organization-Dependency-Insights
+
+### Code
+ - *Secret Scanning Alerts (Advanced security):* Find API tokens or other secrets exposed anywhere in your git history
+     - Custom Regex
+     - Private-Secret-Scanning
+     - Public-Secret-Scanning: Secret scanning alerts for partners runs automatically on public repositories and public npm packages to notify service providers about leaked secrets on GitHub.com.
+     - 
+ - *CodeQL Scanning (Advanced security):* Static analysis of every git push, integrated into the developer workflow.
+
+### Development Lifecycle 
+ - *Branch protection:* Enforce requirement for pushing to a branch and merging PRs
+ - *Commit signing:* Enforce requirement that all commits are signed
+
+## GitHub Organization and Repository Roles
+s201. what are the available access permissions in GitHubs Personal Accounts? (Choose 2)
   - [x] Repository Owner has full control of the repository and its configurations and can invite collaborators.
   - [ ] Repository Reader can read contents but cannot do anything else (incorrect, there is no READER role in Presonal account)
   - [x] Repository Collaborators can pull (read) the contents of the repository and push (write) changes to the repository
