@@ -36,14 +36,20 @@ z004. what is the maximum number of items that can be included and displayed in 
   - [x] 1200
   - [ ] 2000
 
+z005.Jerry is managing a very large project and he is worried the number of items in the GitHub Project will soon reach the 1200 items limit. What Should Jerry do?
+  - [ ] Call GitHub premium support and request and request a quota increase
+  - [x] Turn on the Project's Auto-archive items workflow to auto-archive completed items after 2 weeks
+  - [ ] Switch to the paid plan
+  - [ ] Delete the closed issues so they don't appear in the project
+
 ## GitHub Issues
-z005.In a free GitHub plan, what is the maximum number of people that can be assigned to an issue or PR in a public repository and in a private repository?
+z006.In a free GitHub plan, what is the maximum number of people that can be assigned to an issue or PR in a public repository and in a private repository?
   - [ ] Under the GitHub's free plan, you can assign limited number of assigneds to an issue or PR in a Public repo and up to 10 assignees in a private repo
   - [x] Issues and pull requests in public repositories, and in private repositories for a paid account, can have up to 10 people assigned. Private repositories on the free plan are limited to one person per issue or pull request.
   - [ ] Under the GitHub's free plan, you can assign up to 100 assigneds to an issue or PR for a Public repo and up to 10 assignee for a private repo
   - [ ] There is no limit on the number of assignees in the GitHub's free plan
 
-z006. Who can assign Issues and PRs to other GitHubs users?
+z007. Who can assign Issues and PRs to other GitHubs users?
   - [ ] Only the repository owner can assign Issues and PRs
   - [x] Anyone with write access to a repository can assign issues and pull requests.
   - [ ] Only Contributors and Owners
