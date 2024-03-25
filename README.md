@@ -23,6 +23,12 @@ z002. Which GitHub built-in Project Workflows are turned on by default when you 
   - [ ] Code review approved
   - [x] Pull request merged
 
+z003. Project Insights lets you create charts about GetHub Project. List the chart types available under Project Insight? (choose 2)
+  - [x] Current Charts: Track bugs opened and closed each iteration (X = Iteration#  , Y = number of items by status , Legend = Status)
+  - [x] Historical Charts: track changes to the state of your project items over time (e.g., the X axis is always time)
+  - [ ] User Chart
+  - [ ] Team Chart
+
 
 ## Git Commands
 107. After making some major changes to your code, you are a little nervous about committing. What command would you use to review the commit prior to making it?
