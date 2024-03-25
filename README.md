@@ -1,3 +1,28 @@
+## GitHub Projects
+z001. (very likely exam question) GitHub built-in Project Workflows allows you to automate what happens based on specific events. List the Built-in Workflows?
+  - [x] Item added to project
+  - [x] Item reopened 
+  - [x] Item closed
+  - [x] Code changes requested
+  - [x] Code review approved
+  - [x] Pull request merged
+  - [x] Auto-archive items
+        -- filters: is:issue is:closed updated:<@today-2w    --note: Using the updated operator means that your workflow will run every 12 hours
+        -- Action: Archive Item
+  - [x] Auto-add to project
+        -- filters: is:issue,pr is:open label:bug
+        -- Action: Add the item to the project
+
+z002. Which GitHub built-in Project Workflows are turned on by default when you crate a new project? (choose 2)
+  - [ ] Item added to project
+  - [ ] Item reopened 
+  - [x] Item closed
+  - [ ] Code changes requested
+  - [ ] Code review approved
+  - [x] Pull request merged
+
+
+## Git Commands
 107. After making some major changes to your code, you are a little nervous about committing. What command would you use to review the commit prior to making it?
      - [ ] git commit --verify
      - [ ] git notes show
@@ -49,9 +74,9 @@
 
 119. What practice can help reduce the chances of encountering a merge conflict?
 
-- [ ] Provide detailed commit messages that describe the changes being introduced by the commit.
-- [ ] make large commits that introduce multiple features.
-- [x] Keep local repository branches in sync with upstream branches in the remote repository by committing,pushing and pulling frequently.
-- [ ] Avoid frequent interaction with the remote repository to reduce the probability of pulling conflicts.
-    
+     - [ ] Provide detailed commit messages that describe the changes being introduced by the commit.
+     - [ ] make large commits that introduce multiple features.
+     - [x] Keep local repository branches in sync with upstream branches in the remote repository by committing,pushing and pulling frequently.
+     - [ ] Avoid frequent interaction with the remote repository to reduce the probability of pulling conflicts.
+         
 
