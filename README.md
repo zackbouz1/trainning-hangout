@@ -9,11 +9,11 @@ z001. (very likely exam question) GitHub built-in Project Workflows allows you t
   - [x] Code review approved
   - [x] Pull request merged
   - [x] Auto-archive items
-        -- filters: is:issue is:closed updated:<@today-2w    --note: Using the updated operator means that your workflow will run every 12 hours
-        -- Action: Archive Item
+      * filters: is:issue is:closed updated:<@today-2w    --note: Using the updated operator means that your workflow will run every 12 hours
+      * Action: Archive Item
   - [x] Auto-add to project
-        -- filters: is:issue,pr is:open label:bug
-        -- Action: Add the item to the project
+      * filters: is:issue,pr is:open label:bug
+      * Action: Add the item to the project
 
 z002. Which GitHub built-in Project Workflows are turned on by default when you crate a new project? (choose 2)
   - [ ] Item added to project
