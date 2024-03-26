@@ -1,7 +1,20 @@
 # Github Foundations Practice Questions
 
+[FREE GITHUB FOUNDATIONS PRACTICE TEST](https://ghcertified.com/practice_tests/foundations/)
+
+## Gists
+**Exam Notes:**
+  - Public gists show up in Discover, where people can browse new gists as they're created.
+  - Secret gists don't show up in Discover and are not searchable unless you are logged in and are the author of the secret gist.
+    - Secret gists aren't private. If you send the URL of a secret gist to a friend, they'll be able to see it.
+  - you can clone a gist and make commits the same as you would with any Git repository.
+
+  - #### G100. Can you change a gist from public to secret after creating it?
+  - [ ] Yes
+  - [x] No: After creating a gist, you cannot convert it from public to secret.. However, a secret gist can be made public by editing the gist and updating the visibility to public. 
+
 ## GitHub Projects
-#### p001. (a very popular exam question) GitHub built-in Project Workflows allows you to automate what happens based on specific events. what are the Built-in Workflows? (list 8)
+#### p001. (a very popular exam question) GitHub built-in Project Workflows allows you to automate what happens based on specific events. what are the Built-in Workflows? (Select 8)
   - [ ] Item Labeled (don't fall for this)
   - [x] Item added to project
   - [x] Item reopened 
@@ -59,6 +72,7 @@
 **Important Exam Notes:** 
  - GitHub Advanced Security Features for users are available for public repositories for free.
  - Organizations using GitHub Enterprise Cloud with a **license for GitHub Advanced Security** can also enable Advanced Security Features for users on their private and internal repositories.
+ - Repository administrators and organization owners can configure repository security settings.
 
 ### Supply Chain
  - *Dependency Graph:* view your dependencies
@@ -66,7 +80,6 @@
    - *Security alerts and updates:* notifications for vulnerabilities in your dependencies, and pull requests to fix them
  - *OSS Vulnerability Scanning:*
      - Dependabot: Dependabot alerts are free to use for all repositories on GitHub.com. Advanced capabilities, like the ability to create **custom auto-triage rules** for Dependabot alerts, are available (for free) on public repositories only or Organizations with Advanced Sercurity license.
-
 
 ### Code
  - *Secret Scanning Alerts (Advanced security):* Find API tokens or other secrets exposed anywhere in your git history
@@ -80,12 +93,71 @@
    - Advanced Security feature: Branch protection rule can require the code to pass a series of Status Checks before allowing the PR - e.g., Code should pass CodeQL analysis, Python code should be properly formatted.
  - *Commit signing:* Enforce requirement that all commits are signed
 
+#### s201. What can you find in the security tab of a repository?
+  - [ ] A list of all teh GitHub Issues that have been opened in the repository for security reasons
+  - [ ] A list of all best practices that GitHub recommends for software security
+  - [x] A Security Overview of that repository such as vulnerabilities in dependencies, code scanning results, and secret scanning
+  - [ ] Contact information to teh security team at GitHub
+
+#### s202. What is CodeQL?
+  - [x] A code analysis tool
+  - [ ] A text editor
+  - [ ] A programming language
+  - [ ] A version control system
+
 ## GitHub Organization and Repository Roles
-#### s201. what are the available access permissions in GitHubs Personal Accounts? (Choose 2)
+**Exam Notes:**
+  - You can define _code owners_ in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server.
+  - To use a CODEOWNERS file, create a new file called CODEOWNERS in the .github/, root, or docs/ directory of the repository, **in the branch** where you'd like to add the code owners. If CODEOWNERS files exist in more than one of those locations, GitHub will search for them in that order and use the first one it finds.
+
+#### s211. what are the available access permissions in GitHubs Personal Accounts? (Select 2)
   - [x] Repository Owner has full control of the repository and its configurations and can invite collaborators.
   - [ ] Repository Reader can read contents but cannot do anything else (incorrect, there is no READER role in Presonal account)
   - [x] Repository Collaborators can pull (read) the contents of the repository and push (write) changes to the repository
   - [ ] Repository Maintainners can open/close/reopen issues and PRs (incorrect, there is no MAINTAINNER role in Personal Accounts)
+
+#### s212. What are the possible GitHub account types? (Select 3)
+  - [ ] Shared accounts
+  - [x] Enterprise accounts: allow administrators to centrally manage policy and billing for multiple organizations and enable innersourcing between the organizations.
+  - [ ] Company accounts
+  - [x] Organization accounts: offer EMU, SAML, additional repository roles
+  - [x] Personal accounts
+
+#### s213. What is the purpose of a "CODEOWNERS" file?
+  - [ ] The CODEOWNERS file contains contact details to the repository owners.
+  - [ ] The CODEOWNERS file includes information about the code quality and the maintainability of the code.
+  - [x] The CODEOWNERS file allows you to define individuals or teams that are responsible for specific areas of the codebases. Code owners are automatically requested for review when someone opens a pull request that modifies code that they own.
+  - [ ] The CODEOWNERS file contains information about the software licensing fees and conditions under which the code can be used
+
+
+## Codespace and github.dev 
+
+#### d301. What is a GitHub Codespace?
+  - [x] It is a preconfigured development environment specifically setup for a repository. It allows developers to immediately start writing code for a project without having to setup a local development environment.
+  - [ ] It is an interactive coding environment that requires special hardware to use
+  - [ ] It is an AI-Powered coding tool that auto-generate near flawless code
+  - [ ] It is a user communitee for exchanging code.
+
+#### d302. How can you customize the environment that is run in GitHub Codespaces?
+  - [ ] By creating a custom DockerFile in the root of your repository
+  - [ ] By creating a .github/codespaces.yml configuration file
+  - [x] By creating a .devcontainer/devcontainer.json configuration file
+  - [ ] By creating custom machine images with the repository installed
+
+#### d303. What are the different possible lifecycle phases for a GitHub Codespace?
+  - [ ] Create, Delete
+  - [ ] Create, Stop, Delete
+  - [ ] Create, Rebuild, Delete
+  - [x] [Create, Rebuild, Stop, Delete](https://docs.github.com/en/codespaces/getting-started/understanding-the-codespace-lifecycle)
+
+#### d304. If you stop your GitHub Codespace environment can you come back to the changes later if you haven't committed them?
+  - [x] Yes, that's the default behavior when stopping and starting a GitHub Codespece.
+  - [ ] No, these changes will be lost. You need to commit them before stopping the Codespace
+
+**Exam Notes:**
+|You can stop a codespace at any time. When you stop a codespace, any running processes are stopped. Any saved changes in your codespace will still be available when you next start it. The terminal history is preserved, but the visible contents of the terminal window are not preserved between codespace sessions.|
+|---|
+
 
 ## Advanced Git Operations
 #### 107. After making some major changes to your code, you are a little nervous about committing. What command would you use to review the commit prior to making it?
@@ -145,8 +217,14 @@
   - [ ] Avoid frequent interaction with the remote repository to reduce the probability of pulling conflicts.
          
 #### 120. What command can you use to remove untracked files from the working directory?
-
   - [ ] git rm -all
   - [ ] git rm --cached
   - [x] git clean -d -f
   - [ ] git checkout
+
+#### 121. You want to merge changes from branch feature-a into main and you are creating a pull request. Which branch should be the base branch and which branch should be the compare branch?
+  - [x] main is the base branch and feature-a is the compare branch
+  - [ ] feature-a is the base branch and main is the compare branch
+
+
+
