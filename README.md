@@ -1,6 +1,10 @@
 # Github Foundations Practice Questions
+Credit to:
 
-[FREE GITHUB FOUNDATIONS PRACTICE TEST](https://ghcertified.com/practice_tests/foundations/)
+   - [Exam Pro's free GitHub Foundations training](https://www.exampro.co/github-foundations)
+   - [FREE GITHUB FOUNDATIONS PRACTICE TEST](https://ghcertified.com/practice_tests/foundations/)
+   - [GitHub Docs](https://docs.github.com/en)
+
 
 ## Gists
 **Exam Notes:**
@@ -9,7 +13,7 @@
     - Secret gists aren't private. If you send the URL of a secret gist to a friend, they'll be able to see it.
   - you can clone a gist and make commits the same as you would with any Git repository.
 
-  - #### G100. Can you change a gist from public to secret after creating it?
+#### G100. Can you change a gist from public to secret after creating it?
   - [ ] Yes
   - [x] No: After creating a gist, you cannot convert it from public to secret.. However, a secret gist can be made public by editing the gist and updating the visibility to public. 
 
@@ -54,6 +58,13 @@
   - [x] Turn on the Project's Auto-archive items workflow to auto-archive completed items after 2 weeks
   - [ ] Switch to the paid plan
   - [ ] Delete the closed issues so they don't appear in the project
+
+#### p006. What are the different available options for adding issues and pull requests to a GitHub Project board?
+  - [ ] Only automatically using project workflows
+  - [x] individually, automatically, or in bulk
+  - [ ] Only individually or in bulk
+  - [ ] only manually
+
 
 ## GitHub Issues
 #### z101.In a free GitHub plan, what is the maximum number of people that can be assigned to an issue or PR in a public repository and in a private repository?
@@ -109,6 +120,7 @@
 **Exam Notes:**
   - You can define _code owners_ in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server.
   - To use a CODEOWNERS file, create a new file called CODEOWNERS in the .github/, root, or docs/ directory of the repository, **in the branch** where you'd like to add the code owners. If CODEOWNERS files exist in more than one of those locations, GitHub will search for them in that order and use the first one it finds.
+  - [Roles in an Organization](https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization)
 
 #### s211. what are the available access permissions in GitHubs Personal Accounts? (Select 2)
   - [x] Repository Owner has full control of the repository and its configurations and can invite collaborators.
@@ -128,6 +140,35 @@
   - [ ] The CODEOWNERS file includes information about the code quality and the maintainability of the code.
   - [x] The CODEOWNERS file allows you to define individuals or teams that are responsible for specific areas of the codebases. Code owners are automatically requested for review when someone opens a pull request that modifies code that they own.
   - [ ] The CODEOWNERS file contains information about the software licensing fees and conditions under which the code can be used
+
+#### s214. How can you enforce status checks passing before merging a pull request to the _main_ branch?
+  - [ ] By running tests locally prior to pushing to the remote repository
+  - [ ] By making the repository private
+  - [x] [By creating a branch protection rule](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#about-branch-protection-settings)
+  - [ ] By using GitHub Actions
+
+#### s215. What are Enterprise Managed Users (EMU)?
+  - [ ] It's a user account without access to GitHub web UI but is rather only used for automation tasks in your GitHub Enterprise
+  - [ ] It's a GitHub Enterprise feature that allows you to manage user access from an external identity provider such as Azure AD or Okta
+  - [ ] It's a GitHub Enterprise support user that can be used to manage your Enterprise by GitHub Support once requested
+  - [ ] It's a shared user account that can be used by multiple users in your Enterprise.
+
+
+#### s216. Which of these is NOT a role in a GitHub Organization?
+  - [ ] Outside Collaborator
+  - [ ] GitHub App Manager: can manage the settings of some or all GitHub App registrations owned by the organization.
+  - [x] Organization architect
+  - [ ] Organization Owner
+  - [ ] Organization moderator: allowed to block and unblock non-member contributors, set interaction limits, and hide comments in _public repositories_ owned by the organization. 
+  - [ ] Security manager: permissions to view security alerts and manage settings for code security across your organization, as well as read permissions for all repositories in the organization.
+  - [ ] Billing manager
+  - [ ] Organization member: Organization members have a number of default permissions including the ability to create repositories and projects.
+
+#### s217. What is the role of an organization security manager?
+  - [ ] Security managers are organization members who can manage the billing settings for your organization, such as payment information. (incorrect, this is the role of the Billing Manager)
+  - [ ] Security managers are organization members who have complete access to the organization. (Incorrect, this is the role of the Organization Owner)
+  - [ ] Security managers are organization members who, in addition to their permissions as members, are allowed to block and unblock non-member contributors, set interaction limits, and hide comments in public repositories owned by the organization. (Incorrect, this is the role of the Organization Moderator)
+  - [x] Security managers are organization members who can view security alerts and manage settings for code security across your organization, as well as read permissions for all repositories in the organization.
 
 
 ## Codespace and github.dev 
@@ -154,12 +195,16 @@
   - [x] Yes, that's the default behavior when stopping and starting a GitHub Codespece.
   - [ ] No, these changes will be lost. You need to commit them before stopping the Codespace
 
+#### d305. What is a GitHub Codespace deep link?
+
+
+
 **Exam Notes:**
 |You can stop a codespace at any time. When you stop a codespace, any running processes are stopped. Any saved changes in your codespace will still be available when you next start it. The terminal history is preserved, but the visible contents of the terminal window are not preserved between codespace sessions.|
 |---|
 
 
-## Advanced Git Operations
+## Advanced Git Operations and GitHub Features
 #### 107. After making some major changes to your code, you are a little nervous about committing. What command would you use to review the commit prior to making it?
   - [ ] git commit --verify
   - [ ] git notes show
@@ -202,7 +247,6 @@
   - [x] testfile.js would be reverted to its last saved copy.
   - [ ] testfile.js would be removed from the stage/index area, if present.
 
-### Managing Commits and Merge Conflicts
 #### 118. When Git workflows contain a topic branch, what purpose does the topic branch serve?
   - [ ] Topic branches store unstable code until it is peer reviewed for integration into another feature branch.
   - [ ] Topic branches correspond to different stages of development and are always open for long-running branches to be pulled into.
@@ -226,5 +270,51 @@
   - [x] main is the base branch and feature-a is the compare branch
   - [ ] feature-a is the base branch and main is the compare branch
 
+#### 122. [How can you link a pull request to an issue? (Select 3.)](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)
+  - [x] Linking a pull request to an issue using a keyword (e.g., close #12, closes #12, fix #12, fixes #12, resolve#12)
+  - [x] Manually linking a pull request to an issue using the pull request sidebar
+  - [x] Manually linking a pull request or branch to an issue using the issue sidebar
+  - [ ] By including the issue number in the commit message (incorrect - the keyword should be in the PR description, not the commit message)
 
+**Exam Note:**
+|You can link a pull request or branch to an issue to show that a fix is in progress and to automatically close the issue when the pull request or branch is merged.|
+|---|
 
+#### 123. What is the effect of adding a line Closes #11 to the pull request's description?
+  - [ ] That PR will be automatically merged on the 11th of that month
+  - [ ] Once that PR is merged, the #11th branch will be deleted automatically
+  - [ ] That PR will automaticallyl merge once issue #11 is closed
+  - [x] Once the PR is merged, issue #11 will be closed automatically
+
+#### 124. What are the possible statuses for a "pull request review"? (Choose three.)
+  - [x] Comment: Submit general feedback without explicitly approving the changes or requesting additional changes.
+  - [ ] Applaud
+  - [x] Approve: Submit feedback and approve merging the changes proposed in the pull request
+  - [ ] Deny
+  - [x] Request Changes: Submit feedback that must be addressed before the pull request can be merged
+  - [ ] Close
+
+[About pull request reviews](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews)
+
+#### 125. What is the GitHub Sponsor program?
+  - [ ] It's a group of companies that fund GitHub
+  - [ ] It's a program where highly skilled developers volunteer to help students learn how to use GitHub
+  - [ ] It's a program that helps people find a job in the tech industry
+  - [x] it's a way to financially suppor the developers of the open source projects.
+
+#### 126. On your personal GitHub dashboard you received a notification that user octocat has created a new repository octocat/my-repo. Why did you receive that notification?
+  - [ ] Because you starred the octocat/my-repo repository
+  - [ ] Because you recently visited octocat user profile
+  - [x] Because you are following the user octocat
+  - [ ] Because you contributed to the octocat/my-repo repository
+
+#### 127. What are the GitHub's slash commands?
+  - [ ] it's a way of automating GitHub Actions.
+  - [ ] It's a way to quickly fix code formatting issues in your PR's code changes
+  - [x] [It's a way to quickly insert complex markdown into your PR or issue comments and descriptions.](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-slash-commands)
+  - [ ] It's another name for GitHub CLI
+
+**Exam Notes:**
+
+|You can use slash commands in any description or comment field in issues, pull requests, or discussions where that slash command is supported.|
+|---|
