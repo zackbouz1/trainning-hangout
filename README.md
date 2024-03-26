@@ -130,7 +130,7 @@
   - [x] testfile.js would be reverted to its last saved copy.
   - [ ] testfile.js would be removed from the stage/index area, if present.
 
-## MANAGING MERGE
+### Managing Commits and Merge Conflicts
 #### 118. When Git workflows contain a topic branch, what purpose does the topic branch serve?
   - [ ] Topic branches store unstable code until it is peer reviewed for integration into another feature branch.
   - [ ] Topic branches correspond to different stages of development and are always open for long-running branches to be pulled into.
