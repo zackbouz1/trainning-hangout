@@ -1,5 +1,5 @@
 # Github Foundations Practice Questions
-Credit to:
+Credit goes to:
 
    - [Exam Pro's free GitHub Foundations training](https://www.exampro.co/github-foundations)
    - [FREE GITHUB FOUNDATIONS PRACTICE TEST](https://ghcertified.com/practice_tests/foundations/)
@@ -149,7 +149,7 @@ Credit to:
 
 #### s215. What are Enterprise Managed Users (EMU)?
   - [ ] It's a user account without access to GitHub web UI but is rather only used for automation tasks in your GitHub Enterprise
-  - [ ] It's a GitHub Enterprise feature that allows you to manage user access from an external identity provider such as Azure AD or Okta
+  - [x] It's a GitHub Enterprise feature that allows you to manage user access from an external identity provider such as Azure AD or Okta
   - [ ] It's a GitHub Enterprise support user that can be used to manage your Enterprise by GitHub Support once requested
   - [ ] It's a shared user account that can be used by multiple users in your Enterprise.
 
@@ -170,6 +170,15 @@ Credit to:
   - [ ] Security managers are organization members who, in addition to their permissions as members, are allowed to block and unblock non-member contributors, set interaction limits, and hide comments in public repositories owned by the organization. (Incorrect, this is the role of the Organization Moderator)
   - [x] Security managers are organization members who can view security alerts and manage settings for code security across your organization, as well as read permissions for all repositories in the organization.
 
+#### s218. While role can manage access to a repository in an organization?
+  - [x] People with admin access to a repository can grant access to teams and people.
+  - [ ] People with Security manager role can grant access to teams and individuals
+  - [ ] People with Triage role can manage grant and remove members access
+
+#### s219. Jenna is managing a popular repository in her organization with my teams and individuals access levels. She is concerned some individuals may have mixed roles access. How can she investigate?
+  - [x] [Jenna should go to the repository access page and look for the warining message "Mixed Roles" displayed next to the individual account](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-teams-and-people-with-access-to-your-repository)
+  - [ ] Jenna should go to the Repository Insight page and check if a member belongs to multiple teams
+  - [ ] Jenna should monitor members activity and see if someone can perform additional operations than they should
 
 ## Codespace and github.dev 
 
