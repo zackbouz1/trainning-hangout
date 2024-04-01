@@ -5,6 +5,11 @@ Credit goes to:
    - [FREE GITHUB FOUNDATIONS PRACTICE TEST](https://ghcertified.com/practice_tests/foundations/)
    - [GitHub Docs](https://docs.github.com/en)
 
+## Copilot
+#### c001. You are the GitHub administrator in an organization. Your manager is investigating the use of Copilot to speed up code delivery but is concerned about security. She wants to implement a company-wide security policy and exculde certain file types from being evaluated. Which Copilot plan should you choose to meet your manager's requirements?
+  - [x] [Copilot Business](https://docs.github.com/en/copilot/copilot-business/about-github-copilot-business)
+  - [x] Copilot Enterprise
+  - [ ] Copilot Individuals
 
 ## Gists
 **Exam Notes:**
@@ -65,6 +70,12 @@ Credit goes to:
   - [ ] Only individually or in bulk
   - [ ] only manually
 
+#### p007. List the types of project that GitHub support
+  - [ ] Peraonal Project
+  - [ ] Team project
+  - [x] Organization project: this is only available within an organization. To create, click Profile Picture => Your Organization => Projects => New Projects
+  - [x] User Project: available to personal account. To create, click profile Picture => Your Projects => New Project
+
 
 ## GitHub Issues
 #### z101.In a free GitHub plan, what is the maximum number of people that can be assigned to an issue or PR in a public repository and in a private repository?
@@ -107,7 +118,7 @@ Credit goes to:
 #### s201. What can you find in the security tab of a repository?
   - [ ] A list of all teh GitHub Issues that have been opened in the repository for security reasons
   - [ ] A list of all best practices that GitHub recommends for software security
-  - [x] A Security Overview of that repository such as vulnerabilities in dependencies, code scanning results, and secret scanning
+  - [x] A Security Overview of that repository such as vulnerabilities in dependencies, code scanning results, and secret scanning findings
   - [ ] Contact information to teh security team at GitHub
 
 #### s202. What is CodeQL?
@@ -115,6 +126,13 @@ Credit goes to:
   - [ ] A text editor
   - [ ] A programming language
   - [ ] A version control system
+
+#### s203. Which security feature is available to all GitHub repositories and does NOT require a GitHub Advanced Security (GHAS) License? (select 2)
+  - [x] Depandabot Alters: track security vulnerabilities that apply to your repository's dependencies. This is included in all plans under: Repository => Secrutiy => Vulnerability Alerts. Depandabot Configurations are saved in file: /.github/dependabot.yml  
+  - [x] Dependency graph: Included in all plans under: Repository => Insights => Dependency Graph
+  - [ ] Secret Scanning
+  - [ ] Dependency Review
+  - [ ] Code Scanning (CodeQL)
 
 ## GitHub Organization and Repository Roles
 **Exam Notes:**
@@ -289,7 +307,7 @@ Credit goes to:
 |You can link a pull request or branch to an issue to show that a fix is in progress and to automatically close the issue when the pull request or branch is merged.|
 |---|
 
-#### 123. What is the effect of adding a line Closes #11 to the pull request's description?
+#### 123. What is the effect of adding a line "Closes #11" to the pull request's description?
   - [ ] That PR will be automatically merged on the 11th of that month
   - [ ] Once that PR is merged, the #11th branch will be deleted automatically
   - [ ] That PR will automaticallyl merge once issue #11 is closed
