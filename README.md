@@ -253,7 +253,9 @@ Credit goes to:
   - [ ] No, these changes will be lost. You need to commit them before stopping the Codespace
 
 #### d305. What is a GitHub Codespace deep link?
-
+  - [x] [a hyperlink to take people straight to a page for creating a codespace, with your choice of options preconfigured. Alternatively you can link to the "Resume codespace" page.](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/setting-up-your-repository/facilitating-quick-creation-and-resumption-of-codespaces)
+  - [ ] a link to the Codespaces help documentation
+  - [ ] a URL to the Codespaces homepage
 
 
 **Exam Notes:**
