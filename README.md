@@ -101,7 +101,7 @@ Credit goes to:
   - [x] User Project: available to personal account. To create, click profile Picture => Your Projects => New Project
 
 
-## GitHub Issues
+## GitHub Issues and Pull Requests
 #### z101.In a free GitHub plan, what is the maximum number of people that can be assigned to an issue or PR in a public repository and in a private repository?
   - [ ] Under the GitHub's free plan, you can assign limited number of assigneds to an issue or PR in a Public repo and up to 10 assignees in a private repo
   - [x] Issues and pull requests in public repositories, and in private repositories for a paid account, can have up to 10 people assigned. Private repositories on the free plan are limited to one person per issue or pull request.
@@ -113,6 +113,12 @@ Credit goes to:
   - [x] Anyone with write access to a repository can assign issues and pull requests.
   - [ ] Only Contributors and Owners
   - [ ] Anyone with access to the repository can assign Issues and PRs
+
+#### z103. [How can you use the advanced search feature to find all pull requests that contain comments that mention the word "style" and mention you?](https://docs.github.com/en/search-github/searching-on-github/searching-issues-and-pull-requests#search-by-a-user-thats-involved-in-an-issue-or-pull-request)
+  - [ ] use the query;   is: pr is:closed
+  - [x] use the query:   style in:comments  is:pr invovlves:@me
+  - [ ] use the query:   is:issue  assignee:@me
+  - [ ] use the query:   is:pr commenter:@me	
 
 ## GitHub Security Capabilities( DevSecOps)
 **Important Exam Notes:** 
