@@ -121,6 +121,12 @@ Credit goes to:
   - [ ] use the query:   is:issue  assignee:@me
   - [ ] use the query:   is:pr commenter:@me	
 
+#### z104.What Markdown feature allows you to create a collapsible section in GitHub Flavored Markdown (GFM)?
+  - [x] Markdown does not support collapsable sections, however, GFM allows for using the `` HTML tag to create collabsible sections
+  - [ ]  Implementing the `/collapse` Markdown command
+  - [ ]  Using HTML tags
+  - [ ]  This is not supported
+
 ## GitHub Security Capabilities( DevSecOps)
 **Important Exam Notes:** 
  - GitHub Advanced Security Features for users are available for public repositories for free.
@@ -132,7 +138,8 @@ Credit goes to:
    - *Advisory database:* canoncial database of dependency vulnerabilities
    - *Security alerts and updates:* notifications for vulnerabilities in your dependencies, and pull requests to fix them
  - *OSS Vulnerability Scanning:*
-     - Dependabot: Dependabot alerts are free to use for all repositories on GitHub.com. Advanced capabilities, like the ability to create **custom auto-triage rules** for Dependabot alerts, are available (for free) on public repositories only or Organizations with Advanced Sercurity license.
+     - Dependabot: Dependabot automates the creation of pull requests to update dependencies flagged by automated alerts to recommended versions facilitating the process of keeping dependencies up to date and reducing the security risks associated with outdated packages.
+          - Dependabot alerts are free to use for all repositories on GitHub.com. Advanced capabilities, like the ability to create **custom auto-triage rules** for Dependabot alerts, are available (for free) on public repositories only or Organizations with Advanced Sercurity license.
 
 ### Code
  - *Secret Scanning Alerts (Advanced security):* Find API tokens or other secrets exposed anywhere in your git history
@@ -230,10 +237,17 @@ Credit goes to:
   - [ ] Jenna should monitor members activity and see if someone can perform additional operations than they should
 
 #### s220. You are the maintainer of a popular open source project and you want to create a guideline for repository collaborators. What should you do?
-  - [x] Create a CONTRIBUTING.md file which contains the guidelines and save it in your repository's root, docs, or .github directory.
+  - [x] [Create a CONTRIBUTING.md file which contains the guidelines and save it in your repository's root, docs, or .github directory.](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors#adding-a-contributing-file)
   - [ ] Add the guideline to the ISSUE_TEMPLATE.md
   - [ ] Add the guideline to the CODEOWNERS file
   - [ ] Add the guideline to the READ.me file
+
+
+#### s221. What does the "git blame" command do for a file? 
+  - [x] It displays the commit history of the file and the user who made the changes
+  - [ ] It detects known vulnerabilities in the code and the users who introduces them
+  - [ ] It shows deleted files
+  - [ ] There is no such command in GitHub
 
 ## Codespace and github.dev 
 
