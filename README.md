@@ -167,7 +167,7 @@ Credit goes to:
 
 ## GitHub Organization and Repository Roles
 **Exam Notes:**
-  - You can define _code owners_ in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server.
+  - You can define _CODEOWNERS_ in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server.
   - To use a CODEOWNERS file, create a new file called CODEOWNERS in the .github/, root, or docs/ directory of the repository, **in the branch** where you'd like to add the code owners. If CODEOWNERS files exist in more than one of those locations, GitHub will search for them in that order and use the first one it finds.
   - [Roles in an Organization](https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization)
 
@@ -224,10 +224,16 @@ Credit goes to:
   - [ ] People with Security manager role can grant access to teams and individuals
   - [ ] People with Triage role can manage grant and remove members access
 
-#### s219. Jenna is managing a popular repository in her organization with my teams and individuals access levels. She is concerned some individuals may have mixed roles access. How can she investigate?
+#### s219. Jenna is managing a popular repository in her organization with many teams and individuals access levels. She is concerned some individuals may have mixed roles access. How can she investigate?
   - [x] [Jenna should go to the repository access page and look for the warining message "Mixed Roles" displayed next to the individual account](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/managing-teams-and-people-with-access-to-your-repository)
   - [ ] Jenna should go to the Repository Insight page and check if a member belongs to multiple teams
   - [ ] Jenna should monitor members activity and see if someone can perform additional operations than they should
+
+#### s220. You are the maintainer of a popular open source project and you want to create a guideline for repository collaborators. What should you do?
+  - [x] Create a CONTRIBUTING.md file which contains the guidelines and save it in your repository's root, docs, or .github directory.
+  - [ ] Add the guideline to the ISSUE_TEMPLATE.md
+  - [ ] Add the guideline to the CODEOWNERS file
+  - [ ] Add the guideline to the READ.me file
 
 ## Codespace and github.dev 
 
