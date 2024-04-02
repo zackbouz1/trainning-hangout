@@ -5,12 +5,36 @@ Credit goes to:
    - [FREE GITHUB FOUNDATIONS PRACTICE TEST](https://ghcertified.com/practice_tests/foundations/)
    - [GitHub Docs](https://docs.github.com/en)
 
-## Copilot
+## Copilot (this is accurate as of Q1 2024 - but things are quickly changing)
+ - GitHub Copilot is an AI-powered that offers code autocomplete-style suggestions as you code.
+ - To use GitHub Copilot, sign up for Copilot via its web page, and then install it as an extension into your IDE. Extensions are available for major IDEs like Visual Studio and Visual Studio Code.
+ 
+### Plans (as of Q1 2024)
+  - Copilot Individual is free for verified students, teachers, and maintainers of populare open-source projects
+  - Copilot Business: requires a paid subscription. It offers an Orangization-wide policy management feature and AUdit Logs
+  - Copilot Enterprise plan is  available for enterprises that use GitHub Enterprise Cloud. The plan Offers all the functions available in Copilot Business, PLUS a  the ability to chat with Copilot in the browser in github.com
+
+
 #### c001. You are the GitHub administrator in an organization. Your manager is investigating the use of Copilot to speed up code delivery but is concerned about security. She wants to implement a company-wide security policy and exculde certain file types from being evaluated. Which Copilot plan should you choose to meet your manager's requirements?
   - [x] [Copilot Business](https://docs.github.com/en/copilot/copilot-business/about-github-copilot-business)
   - [x] Copilot Enterprise
   - [ ] Copilot Individuals
 
+#### c002. How does GItHub Copilot recognize prompts for generating code suggenstion in a supported IDE? (Choose 2)
+  - [x] [You can describe something you want to do using natural language within a **comment** in one of the supported file extensions (e.g., .py or .js), and GitHub Copilot will suggest the code to accomplish your goal.](https://docs.github.com/en/enterprise-cloud@latest/copilot/using-github-copilot/getting-started-with-github-copilot#generating-code-suggestions-from-comments-2)
+  - [x] using one of the supported languages, type a meaningful function header (e.g., function calculateDaysBetweenDates(begin, end)). GitHub Copilot will automatically suggest an entire function body in grayed text.
+  - [ ] Using a search function
+
+#### c003. how do you accept a suggestion from GitHub Copilot in a supported file extension (e.g., .JS or .PY)?
+  - [x] [by Pressing the "Tab" key](https://docs.github.com/en/enterprise-cloud@latest/copilot/using-github-copilot/getting-started-with-github-copilot#seeing-your-first-suggestion-2)
+  - [ ] by pressing the "Enter" key
+  - [ ] By pressing "Ctrl-A" combination
+
+#### c004. what are the use cases for [GitHub Copilot Chat?](https://docs.github.com/en/copilot/github-copilot-chat/about-github-copilot-chat#use-cases-for-github-copilot-chat)
+- [x] Generating Unit test cases
+- [x] Explaining code and suggesting improvements
+- [x] Proposing code fixes
+- [X] Answering coding quesitons 
 ## Gists
 **Exam Notes:**
   - Public gists show up in Discover, where people can browse new gists as they're created.
