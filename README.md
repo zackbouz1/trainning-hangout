@@ -31,10 +31,11 @@ Credit goes to:
   - [ ] By pressing "Ctrl-A" combination
 
 #### c004. what are the use cases for [GitHub Copilot Chat?](https://docs.github.com/en/copilot/github-copilot-chat/about-github-copilot-chat#use-cases-for-github-copilot-chat)
-- [x] Generating Unit test cases
-- [x] Explaining code and suggesting improvements
-- [x] Proposing code fixes
-- [X] Answering coding quesitons 
+  - [x] Generating Unit test cases
+  - [x] Explaining code and suggesting improvements
+  - [x] Proposing code fixes
+  - [X] Answering coding quesitons 
+
 ## Gists
 **Exam Notes:**
   - Public gists show up in Discover, where people can browse new gists as they're created.
@@ -257,6 +258,10 @@ Credit goes to:
   - [ ] a link to the Codespaces help documentation
   - [ ] a URL to the Codespaces homepage
 
+#### d306. Tamara is a developer that uses both Visual Studio Codes and Codespaces to manage her code. Tamara has special needs from her environment and has customized her Visual Studio Code settings, and she likes to duplicate those settings across all her development enviroments/machines. How can Tamara synchronize settings across GitHub Codespaces and VS Code?
+  - [ ] Tamara should export her settings to a file
+  - [ ] Tamara should use a Dotfiles repository (e.g., .bash_profile and .bashrc)
+  - [x] Tamara should use Settings Sync feature in Visual Studio Code. Settings Sync enables her to synchronize VS Code settings between the desktop application and the VS Code web client, ensuring a consistent development environment across all her Codespaces
 
 **Exam Notes:**
 |You can stop a codespace at any time. When you stop a codespace, any running processes are stopped. Any saved changes in your codespace will still be available when you next start it. The terminal history is preserved, but the visible contents of the terminal window are not preserved between codespace sessions.|
