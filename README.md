@@ -126,26 +126,32 @@ Credit goes to:
   - [ ] use the query:   is:issue  assignee:@me
   - [ ] use the query:   is:pr commenter:@me	
 
-#### z104.What Markdown feature allows you to create a collapsible section in GitHub Flavored Markdown (GFM)?
-  - [x] Markdown does not support collapsable sections, however, GFM allows for using the `` HTML tag to create collabsible sections
-  - [ ]  Implementing the `/collapse` Markdown command
-  - [ ]  Using HTML tags
-  - [ ]  This is not supported
+#### z104. What Markdown feature allows you to create a collapsible section in GitHub Flavored Markdown (GFM)?
+  - [x] Markdown does not support collapsable sections, however, GFM allows for using the <details> HTML tag </details> to create collabsible sections
+  - [ ] Implementing the `/collapse` Markdown command
+  - [ ] Using HTML tags
+  - [ ] This is not supported
+
+#### z105. Which markdown syntax format the text "Hello, World!" in bold and italics?
+  - [ ] \*\*Hello, \*World\*!\*\*  : this will bold the sentence, but only Italic the word "World"
+  - [ ] \#\#\#Hello, World! : this formats the sentence as heading
+  - [x] [\*\*\*Hello, World!\*\*\*](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#styling-text)
+  - [ ] \*Hello, \*World\*!\* : this iw italic only
 
 ## GitHub Security Capabilities( DevSecOps)
 
 <details><summary>Important Exam Notes:</summary>
 
- - GitHub Advanced Security Features for users are available for public repositories for free.
- - Organizations using GitHub Enterprise Cloud with a **license for GitHub Advanced Security** can also enable Advanced Security Features for users on their private and internal repositories.
+ - GitHub Advanced Security (GHAS) Features for users are available for public repositories for free.
+ - Organizations using GitHub Enterprise Cloud with a **license for GitHub Advanced Security (GHAS)** can also enable Advanced Security Features for users on their private and internal repositories.
  - Repository administrators and organization owners can configure repository security settings.
 ### Supply Chain
- - *Insigth => Dependency Graph:* view your dependencies
+ - *Insights => Dependency Graph:* view your dependencies -- this uses:
    - *Advisory database:* canoncial database of dependency vulnerabilities
    - *Security alerts and updates:* notifications for vulnerabilities in your dependencies, and pull requests to fix them
- - *OSS Vulnerability Scanning:*
-     - Security => Dependabot: Dependabot automates the creation of pull requests to update dependencies flagged by automated alerts to recommended versions facilitating the process of keeping dependencies up to date and reducing the security risks associated with outdated packages.
-          - Dependabot alerts are free to use for all repositories on GitHub.com. Advanced capabilities, like the ability to create **custom auto-triage rules** for Dependabot alerts, are available (for free) on public repositories only or Organizations with Advanced Sercurity license.
+ - *Security => Dependabot:* Dependabot automates the creation of pull requests to update dependencies flagged by automated alerts to recommended versions facilitating the process of keeping dependencies up to date and reducing the security risks associated with outdated packages.
+     - Depandabot uses OSS Vulnerability Scanning: 
+     - Dependabot alerts are free to use for all repositories on GitHub.com. Advanced capabilities, like the ability to create **custom auto-triage rules** for Dependabot alerts, are available (for free) on public repositories only or Organizations with Advanced Sercurity license.
 
 ### Code
  - *Secret Scanning Alerts (GHAS):* Find API tokens or other secrets exposed anywhere in your git history
