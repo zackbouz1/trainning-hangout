@@ -101,6 +101,11 @@ Credit goes to:
   - [x] Organization project: this is only available within an organization. To create, click Profile Picture => Your Organization => Projects => New Projects
   - [x] User Project: available to personal account. To create, click profile Picture => Your Projects => New Project
 
+#### p008. Alice owns a personal repository (not part of an Organization). She created her first Project, and linked it to the Repository. Now she wants to invite Rick to start collaborating on the project. What are the possible roles Alice can assign to Rick?
+  - [ ] Collaborator, Owner, Read
+  - [ ] Owner, Editor, Moderator
+  - [x] Read, Write, Admin
+  - [ ] Edit, Read, Owner
 
 ## GitHub Issues and Pull Requests
 #### z101.In a free GitHub plan, what is the maximum number of people that can be assigned to an issue or PR in a public repository and in a private repository?
@@ -128,30 +133,33 @@ Credit goes to:
   - [ ]  This is not supported
 
 ## GitHub Security Capabilities( DevSecOps)
-**Important Exam Notes:** 
+
+<details><summary>Important Exam Notes:</summary>
+
  - GitHub Advanced Security Features for users are available for public repositories for free.
  - Organizations using GitHub Enterprise Cloud with a **license for GitHub Advanced Security** can also enable Advanced Security Features for users on their private and internal repositories.
  - Repository administrators and organization owners can configure repository security settings.
-
 ### Supply Chain
- - *Dependency Graph:* view your dependencies
+ - *Insigth => Dependency Graph:* view your dependencies
    - *Advisory database:* canoncial database of dependency vulnerabilities
    - *Security alerts and updates:* notifications for vulnerabilities in your dependencies, and pull requests to fix them
  - *OSS Vulnerability Scanning:*
-     - Dependabot: Dependabot automates the creation of pull requests to update dependencies flagged by automated alerts to recommended versions facilitating the process of keeping dependencies up to date and reducing the security risks associated with outdated packages.
+     - Security => Dependabot: Dependabot automates the creation of pull requests to update dependencies flagged by automated alerts to recommended versions facilitating the process of keeping dependencies up to date and reducing the security risks associated with outdated packages.
           - Dependabot alerts are free to use for all repositories on GitHub.com. Advanced capabilities, like the ability to create **custom auto-triage rules** for Dependabot alerts, are available (for free) on public repositories only or Organizations with Advanced Sercurity license.
 
 ### Code
- - *Secret Scanning Alerts (Advanced security):* Find API tokens or other secrets exposed anywhere in your git history
+ - *Secret Scanning Alerts (GHAS):* Find API tokens or other secrets exposed anywhere in your git history
      - Custom Regex
      - Private-Secret-Scanning
      - Public-Secret-Scanning
- - *CodeQL Scanning (Advanced security):* Static analysis of every git push, integrated into the developer workflow.
+ - *CodeQL Scanning (GHAS):* Static analysis of every git push, integrated into the developer workflow.
 
 ### Development Lifecycle 
  - *Branch protection rules:* Enforce requirement for pushing to a branch and merging PRs
    - Advanced Security feature: Branch protection rule can require the code to pass a series of Status Checks before allowing the PR - e.g., Code should pass CodeQL analysis, Python code should be properly formatted.
- - *Commit signing:* Enforce requirement that all commits are signed
+ - *Commit signing:* Enforce requirement that all commits are signed - Code signing is normally required in Open Source projects to verify the identity of the user committing changes using GNU Privacy Guard Open PGP
+
+</details>
 
 #### s201. What can you find in the security tab of a repository?
   - [ ] A list of all teh GitHub Issues that have been opened in the repository for security reasons
