@@ -1,3 +1,7 @@
+<!--START_SECTION:badges-->
+<!--END_SECTION:badges-->
+
+
 # Github Foundations Practice Questions
 Credit goes to:
 
